@@ -1,0 +1,209 @@
+#mainbody
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    background-color: #efeffd;
+    width: 100%;
+    height:100%;
+    top:0%;
+}
+
+h5
+{
+    font-size: 14px;
+}
+
+h6
+{
+    color: rgba(0, 0, 0, 0.591);
+    font-size: 14px;
+}
+
+#container
+{
+    top:4%;
+    position: relative;
+    width: 96%;
+    height:20%;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.info
+{
+    flex: 1;
+    position: relative;
+    margin-left: 3%;
+    height:90%;
+    top:0%;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 6px 1px rgb(173, 171, 171);
+}
+
+#order
+{
+    width:10%;
+    border-left: 4px solid #ef710a;
+}
+
+#revenue
+{
+    border-left: 4px solid rgb(9, 123, 24); 
+}
+
+#pending
+{
+    border-left: 4px solid rgb(23, 81, 197); 
+}
+
+#table
+{
+    border-left: 4px solid rgb(101, 28, 217); 
+}
+
+#quick
+{
+    box-shadow: 1px 1px 6px 1px rgb(173, 171, 171);
+    position: relative;
+    border-radius: 15px;
+    margin: 3%;
+    width:93%;
+    height:23%;
+    left:0%;
+    background-color: white;
+}
+
+.info img
+{
+    position:relative;
+    transform: translate(-50%,-50%) scale(1.5);
+    left:20%;
+    top:40%;
+    border-radius: 10px;
+}
+
+.info .label
+{
+    position: absolute;
+    top:20%;
+    left: 45%;
+    font-size: 20px;
+    font-weight: bolder
+}
+
+.info .quantity
+{
+    position: absolute;
+    top:38%;
+    left: 45%;
+    font-size: 40px;
+    font-weight: bolder
+}
+
+#quick .container
+{
+    position: relative;
+    display: flex;
+    top:10%;
+    left:3%;
+    width:90%;
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+    gap: 90px;
+    align-items: center;
+}
+
+#quick .container > *
+{
+    flex: 1;
+    height: 100px;
+    width:100px;
+    border: 4px solid transparent;
+    border-radius: 15px;
+}
+
+#quick .container > div:nth-child(1)
+{
+    background-color: #ffe3d2;
+}
+
+
+
+
+#quick .container > div:nth-child(1):hover
+{
+    border-color:  #ef710a;
+    cursor: pointer;
+}
+
+#quick .container > div:nth-child(2)
+{
+    background-color: #dce3fc;
+}
+
+#quick .container > div:nth-child(2):hover
+{
+    border-color:rgb(23, 81, 197);
+    cursor: pointer;
+}
+#quick .container > div:nth-child(3)
+{
+    background-color: #d3e9ca;
+}
+#quick .container > div:nth-child(3):hover
+{
+    border-color:rgb(9, 123, 24);
+    cursor:pointer 
+}
+#quick .container > div:nth-child(4)
+{
+    background-color: #e2d5f8;
+}
+#quick .container > div:nth-child(4):hover
+{
+    border-color:rgb(101, 28, 217);
+    cursor:pointer 
+}
+#quick .container > * .img
+{
+    
+    position: relative;
+    width:30%;
+    top:50%;
+    left:3%;
+    transform: translate(0%,-50%) scale(0.5);
+    border-radius: 100%;
+    height:100%;
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
+
+#quick .container>div:nth-child(1) .img
+{
+    background-image: url("../Images/bell.png");
+    background-color: #f1dccc;
+}
+
+#quick .container>div:nth-child(2) .img
+{
+    background-image: url("../Images/list.png");
+    background-color: #ccd7fc;
+}
+
+#quick .container>div:nth-child(3) .img
+{
+    background-image: url("../Images/table_icon.png");
+    background-color: #d5fccc;
+}
+
+#quick .container>div:nth-child(4) .img
+{
+    background-image: url("../Images/qr.png");
+    background-color: #dac6fc;
+}

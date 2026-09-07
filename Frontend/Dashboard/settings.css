@@ -1,0 +1,340 @@
+#mainbody
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    background-color:rgb(239, 239, 253);
+    width: 100%;
+    height:100%;
+    top:0%;
+}
+
+h6
+{
+    color: rgba(0, 0, 0, 0.591);
+    font-size: 14px;
+}
+
+h5
+{
+    font-size: 14px;
+}
+
+#form
+{
+    position: absolute;
+    width:40%;
+    height:80%;
+    background-color: white;
+    left:30%;
+    top:60%;
+    transform: translate(-50%,-60%);
+    box-shadow: 1px 1px 6px 1px rgb(173, 171, 171);
+    border-radius: 15px;
+}
+
+#form2
+{
+    position: absolute;
+    width:20%;
+    height:80%;
+    background-color: white;
+    left:73%;
+    top:60%;
+    transform: translate(-50%,-60%);
+    box-shadow: 3px 2px 5px 2px rgb(173, 171, 171);
+    border-radius: 15px;
+}
+
+.info
+{
+    position:relative;
+    font-size: 20px;
+    font-weight: bold;
+    top:5%;
+    left:13%;
+}
+
+#form2 .info
+{
+    width: 60%;
+    position: absolute;
+    left:59%;
+    top:2.8%;
+    transform: translate(-50%,-50%);
+}
+
+.heading
+{
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    left:17%;
+    
+}
+
+#form2 .heading
+{
+    left:20%;
+}
+
+.name
+{
+    top:15%;
+}
+
+#form2 .name
+{
+    left:20%;
+    top:13%;
+}
+
+.address
+{
+    top:30%;
+}
+
+#form2 .password
+{
+    top:28%;
+}
+
+.gst_num
+{
+    top:48%;
+}
+
+#form2 .question
+{
+    top:46%;
+}
+
+.gst_mode
+{
+    top:64%;
+}
+
+#form2 .answer
+{
+    top:62%;
+}
+
+.fields
+{
+    position: absolute;
+    left:17%;
+    height:5%;
+    width:80%;
+    border: 1px solid rgb(173, 171, 171);
+    border-radius: 10px;
+}
+
+#form2 .fields
+{
+    width:70%;
+    height:4%;
+    left:20%;
+}
+
+.name_input
+{
+    top:19%;
+}
+
+#form2 .name_input
+{
+    top:17%;
+}
+
+.addr_input
+{
+    top:34%;
+    height:10%;
+}
+
+#form2 .password_input
+{
+    top:32%;
+}
+
+.number_input
+{
+    top:52%;
+}
+
+#form2 .question_input
+{
+    top:50%;
+}
+
+.mode_input
+{
+    top:68%;
+}
+
+#form2 .answer_input
+{
+    top:66%;
+}
+
+.caution
+{
+    position: absolute;
+    width:55%;
+    height:5%;
+    background-color: rgba(243, 210, 186, 0.564);
+    text-align: right;
+    align-content: center;
+    left: 99%;
+    bottom: 10%;
+    transform:translate(-100%);
+    color:#ae4e4e;
+    background-image: url("../Images/exclamation.png");    
+    background-repeat: no-repeat no-repeat;
+    background-size: 6%;
+    background-position: 2% center;
+}
+
+
+
+.b
+{
+    position: absolute;
+    width:22%;
+    height:5%;
+    bottom:10%;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    color:white;
+}
+
+.save
+{
+    width:18%;
+    left:2%;
+    background-color: rgb(255, 111, 0);
+    box-shadow: 1px 1px 6px 1px rgb(173, 171, 171);
+    background-image: url("../Images/check.png");    
+    background-repeat: no-repeat no-repeat;
+    background-size: 15%;
+    background-position: 5% center;
+    text-align: right;
+}
+
+.save:hover
+{
+    cursor: pointer;
+}
+
+#form .save:hover, #form .reset:hover
+{
+  width:19%;
+  height:6%;
+}
+
+.reset
+{
+    width:18%;
+    color:black;
+    left:23%;
+    box-shadow: 1px 0px 6px 0px rgb(173, 171, 171);
+    border: 1px solid rgba(0, 0, 0, 0.237);
+    background-color: white;
+    background-image: url("../Images/refresh.png");    
+    background-repeat: no-repeat no-repeat;
+    background-size: 12%;
+    background-position: 5% center;
+}
+.reset
+{
+    cursor: pointer;
+}
+
+#form2 .save,#form2 .reset
+{
+    width:90%;
+    text-align: center;
+    left:50%;
+    height:8%;
+    transform: translate(-50%,0%);
+}
+
+#form2 .save
+{
+    background-image: url("../Images/check2.png"); 
+    bottom:16%;
+}
+
+
+#form2 .save:hover
+{
+    width:92%;
+    height:10%;
+}
+
+#form2 .reset
+{
+    bottom:4%;
+}
+
+#form2 .reset:hover
+{
+    width:92%;
+    height:10%;
+}
+
+.one
+{
+    position: absolute;
+    left:-2%;
+    top:10%;
+}
+
+#form2 .one
+{
+    top:11%;
+}
+
+.two
+{
+    position: absolute;
+    left:-2%;
+    top:27%;
+}
+
+#form2 .two
+{
+    top:26%;
+}
+
+.three
+{
+    position: absolute;
+    left:-2%;
+    top:45%;
+}
+
+#form2 .three
+{
+    top:44%;
+}
+
+.four
+{
+    position: absolute;
+    left:-2%;
+    top:60%;
+}
+
+#form2 .four
+{
+    top:60%;
+}
+
+.restaurant_info_logo
+{
+    
+    top:0%;
+    left:1%;
+}

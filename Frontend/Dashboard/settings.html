@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="settings.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id ="mainbody">
+        <p>
+            <h1 style="padding-left:3%; display: inline;">Settings</h1>
+            <br>
+              <h6 style="padding-left:3%; display: inline;">Manage your restaurant details and tax preferences.</h6>
+        </p>
+
+        <div id = "form">
+            <img class= "restaurant_info_logo" src="../Images/restaurant_info_logo.png" alt="" style="position: absolute; transform: scale(0.8); width:10%; height:10%">
+            <img class= "one" src="../Images/shop.png" alt="" style="position: absolute; transform: scale(0.50); width:20%; height:20%">
+            <img class= "two" src="../Images/place.png" alt="" style="position: absolute; transform: scale(0.50); width:20%; height:20%">
+            <img class= "three" src="../Images/gst_number.png" alt="" style="position: absolute; transform: scale(0.50); width:20%; height:20%">
+            <img class= "four" src="../Images/gst_mode.png" alt="" style="position: absolute; transform: scale(0.50); width:20%; height:20%">
+            <label for="" class = "info"> Restaurant information</label>
+            <hr style="position: relative; display: block; top:5%; left:6%; width: 87%; border-color: rgba(173, 171, 171, 0.243);">
+            <label for="" class = "name heading">Restaurant Name</label>
+            <label for="" class = "address heading">
+                Restaurant Address
+            </label>
+            <label  for="" class = "heading gst_num">
+                GST Number
+            </label>
+            <label for="" class = "heading gst_mode">
+                GST Mode
+            </label>
+            <input type="text" class="fields name_input">
+            <input type="text" class="fields addr_input">
+            <input type="text" class="fields number_input">
+            <select class="fields mode_input">
+                <option value="exclusive">Exclusive (Price + Tax)</option>
+                <option value="inclusive" selected>Inclusive (Tax included in Price)</option>
+            </select>
+            <hr style="position: relative; display: block; top:70%; left:0%; width: 100%; border-color: rgba(173, 171, 171, 0.243);">
+            <div class="caution">
+                <label for=""> changes will be reflected in all future transaction.</label>
+            </div>
+            <input class = "b save" type="button" name="" value="save changes">
+            <input class = "b reset" type="button" name="" value="Reset">
+        </div>
+
+        <div id = "form2">
+            <img class= "one" src="../Images/admin.png" alt="" style="position: absolute; transform: scale(0.60); width:20%; height:10%">
+            <img class= "two" src="../Images/password-manager.png" alt="" style="position: absolute; transform: scale(0.60); width:20%; height:10%">
+            <img class= "three" src="../Images/question-mark.png" alt="" style="position: absolute; transform: scale(0.60); width:20%; height:10%">
+            <img class= "four" src="../Images/answer.png" alt="" style="position: absolute; transform: scale(0.60); width:20%; height:10%">
+            <label for="" class = "info"> Account Settings</label>
+            <hr style="position: relative; display: block; top:5%; left:6%; width: 87%; border-color: rgba(173, 171, 171, 0.243);">
+            <label for="" class = "name heading">Username</label>
+            <label for="" class = "password heading">
+                Password
+            </label>
+            <label  for="" class = "heading question">
+                Validation Question
+            </label>
+            <label for="" class = "heading answer">
+                Answer
+            </label>
+            <input type="text" class="fields name_input">
+            <input type="password" class="fields password_input">
+            <input type="text" class="fields question_input">
+            <input type="text" class="fields answer_input">
+            <hr style="position: relative; display: block; top:70%; left:0%; width: 100%; border-color: rgba(173, 171, 171, 0.243);">
+            
+            <input class = "b save" type="button" name="" value="save changes">
+            <input class = "b reset" type="button" name="" value="Reset">
+        </div>
+
+    </div>    
+</body>
+<script src="./settings.js"></script>
+</html>

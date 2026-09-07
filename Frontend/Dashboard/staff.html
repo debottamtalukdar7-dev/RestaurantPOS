@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="staff.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "mainbody">
+        <p>
+            <h1 style="padding-left:3%; display: inline;">Staff Management</h1>
+            <br>
+              <h6 style="padding-left:3%; display: inline;">Manage your restaurant staff members.</h6>
+        </p>
+
+        <div id = "addstaff">
+            <img src="../Images/person.png" alt="" id="i1">
+            <label for="" class = "main-heading">
+                Add Staff
+            </label>
+            <label for="" class = "sub-heading">Create a new staff member.</label>
+            <label for="" class = "heading" id = "id">Id</label>
+            <label for="" class = "heading" id = "name">Name</label>
+            <label for="" class = "heading" id = "role">Role</label>
+            <input type="text" class = "field" id="id_input" placeholder="Enter staff id">
+            <input type="text" class = "field" id="name_input" placeholder="Enter staff name">
+            <select name="" id="role_input" class = "field">
+                <option value="waiter"> 
+                    WAITER <img src="../Images/waiter.png" alt="">
+                </option>
+                <option value="chef"> 
+                    CHEF <img src="" alt="">
+                </option>
+                <option value="manager"> 
+                    MANAGER <img src="" alt="">
+                </option>
+            </select>
+            <input type="button" value="Add Member" id = "add">
+        </div>
+
+        <div id = "stafflist">
+            <label for="" class = "main-heading">
+                Staff List
+            </label>
+            <label for="" class = "sub-heading">View and manage working staff.</label>
+            <select name="" id="search-role" class = "field">
+                <option value="name"> 
+                    Name 
+                </option>
+                <option value="role"> 
+                    Role <img src="" alt="">
+                </option>
+            </select>
+            <input type="search" name="" id="searchbar" placeholder="search for specific staff">
+            <input type="button" name="" id="searchbtn">
+            <table id = "list">
+                <thead>
+                    <th>NAME</th>
+                    <th>ROLL</th>
+                    <th>ACTIONS</th>
+                </thead>
+                <tbody id = "list_body">
+                    <!-- <tr>
+                        <td class = "cell">
+                            <label for="" class = "name">Mohit</label>
+                            <input type="text" class="nametxt">
+                        </td>
+                        <td class = "cell"><img src="../Images/manager2.png" alt="">
+                            <div class="post"> Manager </div>
+                            <input type="text" class="roletxt">
+                        </td>
+                        <td class = "cell">
+                            <input type="button" class="remove">
+                            <input type="button" class="edit">
+                        </td>
+                    </tr> -->
+                    <!-- <tr>
+                        <td class = "cell">
+                            <label for="">Mohit</label>
+                        </td>
+                        <td class = "cell">
+                            <img src="../Images/baker.png" alt="">
+                            <div class="post"> CHEF </div>
+                        </td>
+                        <td class = "cell">
+                            <input type="button" class="remove">
+                            <input type="button" class="edit">
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="./staff_member.js"></script>
+</body>
+</html>

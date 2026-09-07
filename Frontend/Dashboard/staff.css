@@ -1,0 +1,389 @@
+#mainbody
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    background-color:rgb(239, 239, 253);
+    width: 100%;
+    height:100%;
+    top:0%;
+    left:0%;
+}
+
+h6
+{
+    color: rgba(0, 0, 0, 0.591);
+    font-size: 14px;
+}
+
+h5
+{
+    font-size: 14px;
+}
+
+#addstaff
+{
+    position: absolute;
+    width:21%;
+    height:60%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px 1px rgb(173, 171, 171);
+    left:3%;
+    top:14%;
+}
+
+#i1
+{
+    position: absolute;
+    width:17%;
+    height:auto;
+    left:7%;
+    top:4%;    
+}
+
+
+.main-heading
+{
+    position: absolute;
+    left:50%;
+    transform:translate(-50%,0%);
+    top:3%;
+    font-size: 30px;
+    font-weight:700;
+}
+
+.sub-heading
+{
+    width: 60%;
+    position: absolute;
+    color: rgb(84, 82, 82);
+    left:62%;
+    top:12%;
+    transform: translate(-50%,0%);
+
+}
+
+.heading
+{
+    position: absolute;
+    left:7%;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+#name
+{
+    
+    top:43%;
+    
+}
+
+.field
+{
+    position: absolute;
+    left:7%;
+    width:85%;
+    height:10%;
+    border: 1px solid rgb(196, 191, 191);
+    border-radius: 10px;
+}
+
+#id
+{
+    
+    top:20%;
+}
+#id_input
+{
+    font-size: 1.3rem;
+    top: 27%;
+}
+
+#name_input
+{
+    font-size: 1.3rem;
+    top:50%;
+}
+
+#role
+{
+    top:65%;
+}
+
+#role_input
+{
+    top:73%;
+}
+
+#add
+{
+    background-color: rgb(255, 124, 24);
+    position: absolute;
+    color:white;
+    border: 2px solid transparent;
+    font-size: medium;
+    font-weight: 700;
+    border-radius: 15px;
+    width:85%;
+    height:10%;
+    left: 50%;
+    top:86%;
+    transform: translate(-50%,0%);
+    
+}
+
+#add:hover
+{
+    cursor: pointer;
+    /* background-color: white;
+    color:rgb(255, 124, 24);  */
+    width:87%;
+    height:12%;
+}
+
+#stafflist
+{
+    position:absolute;
+    width:60%;
+    height:75%;
+    left:30%;
+    top:14%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px 1px rgb(173, 171, 171);
+
+}
+
+#stafflist .main-heading
+{
+    transform: translate(0%,0%);
+    left:5%;
+    top:3%;
+}
+
+#stafflist .sub-heading
+{
+    transform: translate(0%,0%);
+    left:5%;
+    top:9%
+}
+
+#list
+{
+    width:92%;
+    border-collapse: collapse;
+    position:absolute;
+    left:4%;
+    top:15%;
+    height:80%;
+    border: 2px solid black;
+}
+
+#list thead
+{
+    font-weight: 700;
+    font-size: 18px;
+    background-color: rgb(246, 244, 244);
+    
+}
+
+#list tbody {
+    position: absolute;
+    left:0%;
+    width:100%;
+    display: block;
+    height:86%;
+    overflow-y: auto;
+}
+
+#list thead,
+#list tbody tr {
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+
+#list thead th
+{
+    /* border-radius:4px; */
+    text-align: center;
+    margin: 0%;
+    width:30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+.cell
+{
+    position: relative;
+    border-bottom: 1px solid rgba(126, 124, 124, 0.617);
+    padding-top: 2.2%;
+    padding-bottom:2.2%;
+    width:33%;
+    height:100%;
+}
+
+.cell img
+{
+    position: absolute;
+    top:25%;
+    left:50%;
+    transform: translate(-50%,-46%) scale(0.56);
+
+}
+
+.cell div
+{
+    position: absolute;
+    width:30%;
+    height:35%;
+    top:59%;
+    left:50%;
+    transform: translate(-50%);
+    border-radius: 6px;
+
+}
+
+.cell .edit
+{
+    position:absolute;
+    top:50%;
+    left:35%;
+    width:10%;
+    height:50%;
+    transform: translate(0%,-50%);
+    border-radius: 5px;
+    border:1px solid black;
+    background-image: url("../Images/edit.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    transition: background-image 0.25s ease, background-color 0.25s ease-in;
+
+}
+
+.cell .edit:hover
+{
+    background-color: black;
+    background-image: url("../Images/edit_light.png");
+}
+
+.cell .remove
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:10%;
+    height:50%;
+    transform: translate(0%,-50%);
+    border-radius: 5px;
+    border: 1px solid black;
+    background-image: url("../Images/remove_idle.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    transition: background-image 0.25s ease, background-color 0.25s ease-in;
+    
+}
+
+.cell .remove:hover
+{
+    background-color: rgb(240, 17, 17);
+    background-image: url("../Images/remove_hover.png");
+}
+
+.role
+{
+    vertical-align: baseline;
+    position: absolute;
+    width:22%;
+    height:30%;
+    left:50%;
+    transform: translate(-50%,0%);
+}
+
+.chef
+{
+    background-color: rgb(183, 211, 250);
+    color:rgb(26, 76, 214);
+}
+
+.waiter
+{
+    background-color: rgb(183, 250, 200);
+    color:rgb(50, 132, 10);
+}
+
+.manager
+{
+    background-color: rgb(250, 203, 183);
+    color:rgb(137, 7, 7);
+}
+
+#list tbody input[type="text"]
+{
+    position: absolute;
+    border: 1px solid rgba(126, 124, 124, 0.617);
+    border-radius: 20px;
+    height:30%;
+    width:42%;
+    left:28%;
+}
+
+.nametxt
+{
+    left:18%;
+    top:37%;
+}
+
+.roletxt
+{
+    top:59%;
+}
+
+input[type="search"]
+{
+    position: absolute;
+    left:65%;
+    top:2%;
+    width:25%;
+    height:5%;
+    border:1px solid rgba(126, 124, 124, 0.617);
+    border-radius: 20px;
+}
+
+#searchbtn
+{
+    position:absolute;
+    width:4%;
+    height:4%;
+    left:91%;
+    top:2.5%;
+    background-color: transparent;
+    background-image: url("../Images/search-glass.png");
+    background-repeat: no-repeat no-repeat;
+    border: 1px solid transparent;
+
+}
+
+#searchbtn:hover
+{
+    cursor: pointer;
+    background-image: url("../Images/search-glass-gold.png");
+}
+
+#search-role
+{
+    position: absolute;
+    width:10%;
+    height:5%;
+    max-height: 6%;
+    top:2%;
+    left:54%;
+}
+#search-role:hover
+{
+    color:white;
+    background-color: black;
+}
