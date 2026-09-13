@@ -14,7 +14,7 @@ dashboard_buttons.forEach((button) =>
     if(button != null || button != logout)
     {
         button.addEventListener("click",
-        function()
+        async function()
         {
             const n = dashboard_buttons.length;
             
@@ -30,7 +30,8 @@ dashboard_buttons.forEach((button) =>
             button.classList.replace("sbutton","sbutton-selected");
             const index = dashboard_buttons.indexOf(button);
 
-            loadPage(pages[index],index)
+            await loadPage(pages[index], index);
+            
         })
     }
 });
@@ -40,34 +41,40 @@ dashboard_buttons.forEach((button) =>
 logout.addEventListener("click",
     function()
     {
-        document.location.href = "../login_page.html";
+        document.location.href = "../../login_page.html";
     }
 )
 
 async function loadPage(page,index) {
 
-    const response = await fetch(page);
+    const response = await fetch(`../Pages/${page}`);
     const data = await response.text();
-
     content.innerHTML = data;
-
+    
     // settings.html → settings.js
     // staff.html    → staff.js
     // orders.html   → orders.js
-
     if(index != 0)
-    {   
-        const scriptName = scripts[index]
-        if (!document.querySelector(`script[src="${scriptName}"]`)) {
-            
-            const script = document.createElement("script");
-            
-            script.src = scriptName;
-            
-            document.body.appendChild(script);
-        }
+    {
+        const script = await import(`../Scripts/${scripts[index]}`);
+        script.init();
     }
     
+    // if(index != 0)
+    //     {   
+    //         const scriptName = scripts[index];
+    //         if (!document.querySelector(`script[src="../Scripts/${scriptName}"]`)) {
+                
+    //             const script = document.createElement("script");
+                
+    //             script.src = `../Scripts/${scriptName}`;
+    //             script.type = "module"
+                
+    //             document.body.appendChild(script);
+    //         }
+    //     }
+        
+        console.log(data);
 
     // if(page == "settings.html")
     // {

@@ -95,55 +95,55 @@
 }
 #dashboard
 {
-    --icon:url("../Images/dashboard_logo.png")
+    --icon:url("../../Images/dashboard_logo.png")
 }
 
 #orders
 {
-    --icon:url("../Images/order_logo.png");
+    --icon:url("../../Images/order_logo.png");
     top:20%;
 }
 
 #mm
 {
-    --icon:url("../Images/menu_logo.png");
+    --icon:url("../../Images/menu_logo.png");
     top:25%;
 }
 
 #staff
 {
-    --icon:url("../Images/group_logo.png");
+    --icon:url("../../Images/group_logo.png");
     top:30%;
 }
 
 #tq
 {
-    --icon:url("../Images/table_logo.png");
+    --icon:url("../../Images/table_logo.png");
     top:35%
 }
 
 #reports
 {
-    --icon:url("../Images/report_logo.png");
+    --icon:url("../../Images/report_logo.png");
     top:40%;
 }
 
 #settings
 {
-    --icon:url("../Images/settings_logo.png");
+    --icon:url("../../Images/settings_logo.png");
     top:45%;
 }
 
 #logout
 {
-    --icon:url("../Images/logout_logo.png");
+    --icon:url("../../Images/logout_logo.png");
     top:60%;
     border-left: 3px solid #ff0000;
 }
 
 #logout:hover
 {
-    background-image:  linear-gradient(to left, rgb(6, 15, 42) , #f11a065e), url("../Images/logout_logo.png");
+    background-image:  linear-gradient(to left, rgb(6, 15, 42) , #f11a065e), url("../../Images/logout_logo.png");
     background-repeat: no-repeat no-repeat;
     background-position: 0px center;
     background-size: cover 24px 24px;

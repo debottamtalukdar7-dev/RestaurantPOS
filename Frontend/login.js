@@ -24,8 +24,12 @@ loginBtn.addEventListener("click", async () => {
     console.log(data);
 
     if(response.ok){
+
         localStorage.setItem("token", data.token);
-        window.location.href = "./Dashboard/dashboard.html";
+        localStorage.setItem("username",username);
+        localStorage.setItem("password",password);
+        
+        window.location.href = "./Dashboard/Pages/dashboard.html";
         
     }
 

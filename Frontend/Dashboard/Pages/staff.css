@@ -257,7 +257,7 @@ h5
     transform: translate(0%,-50%);
     border-radius: 5px;
     border:1px solid black;
-    background-image: url("../Images/edit.png");
+    background-image: url("../../Images/edit.png");
     background-repeat: no-repeat no-repeat;
     background-position: center center;
     transition: background-image 0.25s ease, background-color 0.25s ease-in;
@@ -267,7 +267,7 @@ h5
 .cell .edit:hover
 {
     background-color: black;
-    background-image: url("../Images/edit_light.png");
+    background-image: url("../../Images/edit_light.png");
 }
 
 .cell .remove
@@ -280,7 +280,7 @@ h5
     transform: translate(0%,-50%);
     border-radius: 5px;
     border: 1px solid black;
-    background-image: url("../Images/remove_idle.png");
+    background-image: url("../../Images/remove_idle.png");
     background-repeat: no-repeat no-repeat;
     background-position: center center;
     transition: background-image 0.25s ease, background-color 0.25s ease-in;
@@ -290,7 +290,7 @@ h5
 .cell .remove:hover
 {
     background-color: rgb(240, 17, 17);
-    background-image: url("../Images/remove_hover.png");
+    background-image: url("../../Images/remove_hover.png");
 }
 
 .role
@@ -361,7 +361,7 @@ input[type="search"]
     left:91%;
     top:2.5%;
     background-color: transparent;
-    background-image: url("../Images/search-glass.png");
+    background-image: url("../../Images/search-glass.png");
     background-repeat: no-repeat no-repeat;
     border: 1px solid transparent;
 
@@ -370,7 +370,7 @@ input[type="search"]
 #searchbtn:hover
 {
     cursor: pointer;
-    background-image: url("../Images/search-glass-gold.png");
+    background-image: url("../../Images/search-glass-gold.png");
 }
 
 #search-role

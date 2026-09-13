@@ -186,24 +186,24 @@ h6
 
 #quick .container>div:nth-child(1) .img
 {
-    background-image: url("../Images/bell.png");
+    background-image: url("../../Images/bell.png");
     background-color: #f1dccc;
 }
 
 #quick .container>div:nth-child(2) .img
 {
-    background-image: url("../Images/list.png");
+    background-image: url("../../Images/list.png");
     background-color: #ccd7fc;
 }
 
 #quick .container>div:nth-child(3) .img
 {
-    background-image: url("../Images/table_icon.png");
+    background-image: url("../../Images/table_icon.png");
     background-color: #d5fccc;
 }
 
 #quick .container>div:nth-child(4) .img
 {
-    background-image: url("../Images/qr.png");
+    background-image: url("../../Images/qr.png");
     background-color: #dac6fc;
 }

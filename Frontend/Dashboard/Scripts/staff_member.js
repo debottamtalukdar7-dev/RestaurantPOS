@@ -1,13 +1,4 @@
-console.log("Loaded!")
 
-const id_input = document.getElementById("id_input");
-const name_input = document.getElementById("name_input");
-const role_input = document.getElementById("role_input");
-const add_btn = document.getElementById("add");
-const search_btn = document.getElementById("searchbtn");
-const tbody = document.getElementById("list_body");
-const search_role = document.getElementById("search-role");
-const search_box = document.getElementById("searchbar");
 
 function clearTable(table)
 {
@@ -83,7 +74,7 @@ async function addToStaffList(staff)
             }
     }
 
-    avatarImg.setAttribute("src", `../Images/${imgName}`);
+    avatarImg.setAttribute("src", `../../Images/${imgName}`);
 
     const role_label = document.createElement("div")
     role_label.classList.add("role");
@@ -109,6 +100,9 @@ async function addToStaffList(staff)
     row.appendChild(cell1);
     row.appendChild(cell2);
     row.appendChild(cell3);
+
+    const tbody = document.getElementById("list_body");
+
 
     tbody.appendChild(row);
 
@@ -247,7 +241,7 @@ async function addToStaffList(staff)
                     role_label.classList.replace(staff.role,roletxt.value);
                     console.log(role_label.classList.toString())
                     role_label.innerText = roletxt.value;
-                    avatarImg.setAttribute("src", `../Images/${imgName}`);
+                    avatarImg.setAttribute("src", `../../Images/${imgName}`);
                     const data = await response.json();
                     alert(data["message"]);
                 }
@@ -289,70 +283,82 @@ async function showList()
     }
 }
 
-showList();
+export function init() {
 
-search_btn.addEventListener("click",async () =>
-{   
-    searchStaff(search_role.value,search_box.value);
-});
+    console.log("Loaded!");
+    showList();
+    const id_input = document.getElementById("id_input");
+    const name_input = document.getElementById("name_input");
+    const role_input = document.getElementById("role_input");
+    const add_btn = document.getElementById("add");
+    const search_btn = document.getElementById("searchbtn");
+    const search_role = document.getElementById("search-role");
+    const search_box = document.getElementById("searchbar");
 
-search_box.addEventListener("input",async (event)=>
-{
-    if(search_box.value == "")
-    {
-        const table = document.getElementById("list");
-        clearTable(table);
-
-        showList();
-    }
-})
-
-search_box.addEventListener("keydown", async (event) => {
-    if (event.key == "Enter") {
+    search_btn.addEventListener("click", async () => {
         searchStaff(search_role.value, search_box.value);
-    }
-})
+    });
 
-add_btn.addEventListener("click", async () =>
-{
-    const id = id_input.value;
-    const name = name_input.value;
-    const role = role_input.value;
+    search_box.addEventListener("input", async (event) => {
+        if (search_box.value == "") {
+            const table = document.getElementById("list");
+            clearTable(table);
 
-    console.log("Staff!");
-    const response = await fetch("http://localhost:3000/api/staff/appoint",
-        {
-            method:"POST",
-            
-            headers:
-            {
-                "content-type":"application/json"
-            },
-
-            body:JSON.stringify(
-                {
-                    id:id,
-                    name:name,
-                    role:role
-                }
-            )
-            
+            showList();
         }
-    );
+    })
 
-    const data = await response.json();
+    search_box.addEventListener("keydown", async (event) => {
+        if (event.key == "Enter") {
+            searchStaff(search_role.value, search_box.value);
+        }
+    })
 
-    if(response.ok)
-    {
+    add_btn.addEventListener("click", async () => {
+        const id = id_input.value;
+        const name = name_input.value;
+        const role = role_input.value;
+
+        console.log("Staff!");
+        const response = await fetch("http://localhost:3000/api/staff/appoint",
+            {
+                method: "POST",
+
+                headers:
+                {
+                    "content-type": "application/json"
+                },
+
+                body: JSON.stringify(
+                    {
+                        id: id,
+                        name: name,
+                        role: role
+                    }
+                )
+
+            }
+        );
+
+        const data = await response.json();
+
+        if (response.ok) {
+            
+            addToStaffList({
+                id: id,
+                name: name,
+                role: role
+            });
+        }
+
         alert(data["message"])
-        addToStaffList({
-            id: id,
-            name: name,
-            role: role
-        });
-    }
+
+    });
+
+
     
-});
+}
+
 
 
 
