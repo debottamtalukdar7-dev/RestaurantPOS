@@ -8,7 +8,7 @@ async function createStaff(req, res){
         const existingStaff = await Staff.findOne({ id: req.body.id });
 
         if (existingStaff) {
-            return res.status(201).json({
+            return res.status(404).json({
                 message: "User already exists!"
             })
         }
