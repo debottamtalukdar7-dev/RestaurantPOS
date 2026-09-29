@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="tables.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>Tables Window</h1>
+    <p>
+            <h1 style="padding-left:3%; display: inline;">Tables</h1>
+            <br>
+            <h6 style="padding-left:3%; display: inline;">Manage your restaurant tables and status.</h6>
+
+    </p>
+
+    <div id = "tableList">
+        <div class="table">
+            <img src="../../Images/dining-table-available.png" alt="">
+            <label for="" class="tablenumber">Table1</label>
+            <label for="" class="totalseats">4 seats</label>
+            <div>Available</div>
+            <input type="button" value="" class="edit">
+            <input type="button" value="" class="delete">
+        </div>
+        <div class="table">
+            <img src="../../Images/dining-table-available.png" alt="">
+            <label for="" class="tablenumber">Table1</label>
+            <label for="" class="totalseats">4 seats</label>
+            <div>Available</div>
+            <input type="button" value="" class="edit">
+            <input type="button" value="" class="delete">
+        </div>
+        <div class="table">
+            <img src="../../Images/dining-table-available.png" alt="">
+            <label for="" class="tablenumber">Table1</label>
+            <label for="" class="totalseats">4 seats</label>
+            <div>Available</div>
+            <input type="button" value="" class="edit">
+            <input type="button" value="" class="delete">
+        </div>
+        <div class="table">
+            <img src="../../Images/dining-table-available.png" alt="">
+            <label for="" class="tablenumber">Table1</label>
+            <label for="" class="totalseats">4 seats</label>
+            <div>Available</div>
+            <input type="button" value="" class="edit">
+            <input type="button" value="" class="delete">
+        </div>
+        <div class="table">
+            <img src="../../Images/dining-table-available.png" alt="">
+            <label for="" class="tablenumber">Table1</label>
+            <label for="" class="totalseats">4 seats</label>
+            <div>Available</div>
+            <input type="button" value="" class="edit">
+            <input type="button" value="" class="delete">
+        </div>
+        <div class="table">
+            <img src="../../Images/dining-table-available.png" alt="">
+            <label for="" class="tablenumber">Table1</label>
+            <label for="" class="totalseats">4 seats</label>
+            <div>Available</div>
+            <input type="button" value="" class="edit">
+            <input type="button" value="" class="delete">
+        </div>
+
+    </div>
+    <div id = "QRList">
+    <label for="" class="heading" style="top:3%;">Table QR Codes</label>
+        <label for="" class="sub-heading">Scan the QR codes to book a table.</label>
+        <div class = "qrContainer">
+            <div class="qr-code">
+                <img src="../../Images/qr-code.png" alt="">
+                <label for="" class="tableidx">Table1</label>
+                <label for="" class="seats">4 Seats</label>
+                <input type="button" value="Download" class="download">
+                <a href="">http://127.0.0.1:3001/Frontend/Dashboard/Pages/tables.html</a>
+            </div>
+
+            <div class="qr-code">
+                <img src="../../Images/qr-code.png" alt="">
+                <label for="" class="tableidx">Table1</label>
+                <label for="" class="seats">4 Seats</label>
+                <input type="button" value="Download" class="download">
+                <a href="">http://127.0.0.1:3001/Frontend/Dashboard/Pages/tables.html</a>
+            </div>
+
+            <div class="qr-code">
+                <img src="../../Images/qr-code.png" alt="">
+                <label for="" class="tableidx">Table1</label>
+                <label for="" class="seats">4 Seats</label>
+                <input type="button" value="Download" class="download">
+                <a href="">http://127.0.0.1:3001/Frontend/Dashboard/Pages/tables.html</a>
+            </div>
+
+            <div class="qr-code">
+                <img src="../../Images/qr-code.png" alt="">
+                <label for="" class="tableidx">Table1</label>
+                <label for="" class="seats">4 Seats</label>
+                <input type="button" value="Download" class="download">
+                <a href="">http://127.0.0.1:3001/Frontend/Dashboard/Pages/tables.html</a>
+            </div>
+
+            <div class="qr-code">
+                <img src="../../Images/qr-code.png" alt="">
+                <label for="" class="tableidx">Table1</label>
+                <label for="" class="seats">4 Seats</label>
+                <input type="button" value="Download" class="download">
+                <a href="">http://127.0.0.1:3001/Frontend/Dashboard/Pages/tables.html</a>
+            </div>
+        </div>
+    </div>
+    <div id = "InsertionList">
+        <label for="" class="heading">Add/Edit Table</label>
+        <label for="" class="" id="tableNumberlabel">Table Number</label>
+        <label for="" class="" id="seatslabel">Number of Seats</label>
+        <label for="" class="" id="statuslabel">Status</label>
+
+        <input type="text" id="tableNumbertxt" placeholder="e.g.1">
+        <input type="text" id="seatstxt" placeholder="e.g.4">
+        <select name="" id="status">
+            <option value="available">Available</option>
+            <option value="occupied">Occupied</option>
+        </select>
+
+        <input type="button" value="Save" id="save">
+    </div>
+
+
 </body>
 </html>

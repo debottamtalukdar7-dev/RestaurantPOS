@@ -1,0 +1,324 @@
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    background-color:rgb(239, 239, 253);
+    width: 100%;
+    height:100%;
+    top:0%;
+    left:0%;
+}
+
+h6
+{
+    color: rgba(0, 0, 0, 0.591);
+    font-size: 14px;
+}
+
+h5
+{
+    font-size: 14px;
+}
+
+#tableList
+{
+    position: absolute;
+    top:14%;
+    left:3%;
+    width:50%;
+    height:53%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1%;
+    row-gap: 1%;
+    grid-auto-rows: 53%;
+    overflow-y: auto;
+    align-items: center;
+}
+
+#QRList
+{
+    position: absolute;
+    top:14%;
+    left:56%;
+    width:40%;
+    height:80%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+}
+
+#InsertionList
+{
+    position: absolute;
+    top:70%;
+    left:3%;
+    width:50%;
+    height:24%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+}
+
+.heading
+{
+    position: absolute;
+    left:3%;
+    top:7%;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+#tableNumberlabel
+{
+    position: absolute;
+    left:3%;
+    top:30%;
+}
+
+#seatslabel
+{
+    position: absolute;
+    left:40%;
+    top:30%;
+}
+
+#statuslabel
+{
+    position: absolute;
+    left:80%;
+    top:30%;
+}
+
+#tableNumbertxt
+{
+    position:absolute;
+    left:3%;
+    top:45%;
+    width:25%;
+    height:15%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600
+}
+
+#seatstxt
+{
+    position:absolute;
+    left:40%;
+    top:45%;
+    width:25%;
+    height:15%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+#status
+{
+    position:absolute;
+    left:80%;
+    top:45%;
+    width:18%;
+    height:15%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+#save
+{
+    position:absolute;
+    top:70%;
+    width:13%;
+    left:3%;
+    height:15%;
+    border:none;
+    border-radius: 10px;
+    background-color: rgb(25, 94, 244);
+    color:white;
+    
+}
+
+#save:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.sub-heading
+{
+    position: absolute;
+    top: 7.5%;
+    left:3%;
+    color:rgba(63, 62, 62, 0.682);
+    font-weight: 200;
+}
+
+.qrContainer
+{
+    position: absolute;
+    left:3%;
+    width:90%;
+    height:80%;
+    max-height:100%;
+    display: flex;
+    top:15%;
+    gap: 10%;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.qrContainer > *
+{
+    flex-shrink: 0;
+}
+
+.qr-code
+{
+    position: relative;
+    display: block;
+    border: 0.5px solid rgba(208, 201, 201, 0.477);
+    border-radius: 10px;
+    width:98%;
+    height:20%;
+    background-color: #ffffff;
+}
+
+.qr-code > img
+{
+    position: absolute;
+    top:50%;
+    transform: translate(0%,-50%);
+    left:3%;
+}
+
+.tableidx
+{
+    position: absolute;
+    top:20%;
+    left:15%;
+    font-size: large;
+    font-weight: 500;
+
+}
+
+.seats
+{
+    position: absolute;
+    top:40%;
+    left:15%;
+}
+
+.download
+{
+    position:absolute;
+    top:35%;
+    width:13%;
+    left:82%;
+    height:35%;
+    border:none;
+    border-radius: 10px;
+    background-color: rgb(25, 94, 244);
+    color:white;
+    transform: translate(0%,-50%);
+}
+
+.download:hover
+{
+    cursor:pointer;
+    transform: translate(0%,-50%) scale(1.1);
+}
+
+a
+{
+    position: absolute;
+    left:15%;
+    top:55%;
+}
+
+.table
+{
+    position: relative;
+    left:10%;
+    width:70%;
+    height:60%;
+    border: 0.5px solid rgba(208, 201, 201, 0.477);
+    border-radius: 10px;
+}
+
+.tablenumber
+{
+    position: absolute;
+    top:10%;
+    left:53%;
+    font-size: large;
+    font-weight: 500;
+}
+
+.totalseats
+{
+    position: absolute;
+    top:30%;
+    left:53%;
+}
+
+.table > img
+{
+    position:absolute;
+    left:5%;
+    top:10%;
+}
+
+.table > div
+{
+    position: absolute;
+    left:53%;
+    top:50%;
+    width: 35%;
+    height:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(208, 252, 216, 0.855);
+    color:rgb(10, 46, 10);
+    border-radius: 10px;
+}
+
+.edit
+{
+    background-image: url("../../Images/edit.png");
+    background-repeat: no-repeat no-repeat;
+    background-size:auto;
+    background-position: center center;
+    border: none;
+    border-radius: 10pxs;
+    width:20%;
+    height:20%;
+    left: 5%;
+    top:75%;
+    position:absolute;
+}
+
+.delete
+{
+    background-image: url("../../Images/remove_idle.png");
+    background-repeat: no-repeat no-repeat;
+    background-size:auto;
+    background-position: center center;
+    border: none;
+    border-radius: 10pxs;
+    width:20%;
+    height:20%;
+    left: 35%;
+    top:75%;
+    position:absolute;
+}
