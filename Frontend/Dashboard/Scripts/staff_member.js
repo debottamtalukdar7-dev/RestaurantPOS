@@ -1,5 +1,3 @@
-
-
 function clearTable(table)
 {
     while (table.rows.length > 0) {
@@ -9,7 +7,6 @@ function clearTable(table)
 
 async function searchStaff(param,value)
 {
-    
     
     const response = await fetch(`http://localhost:3000/api/staff/search?${param}=${value}`,
         {
@@ -35,7 +32,7 @@ async function searchStaff(param,value)
 
 async function addToStaffList(staff)
 {
-    console.log(`${staff.name} ${staff.role} ${staff.salary}`)
+    console.log(`${staff.name} ${staff.role} ${staff.salary}`);
 
     const row = document.createElement("tr");
 
@@ -268,7 +265,7 @@ async function showList()
     const response = await fetch("http://localhost:3000/api/staff/list", {
         method: "GET",
         headers: {
-            "Content-Type": "application/json"
+            "content-type": "application/json"
         }
     })
 
@@ -315,6 +312,7 @@ export function init() {
     })
 
     add_btn.addEventListener("click", async () => {
+        
         const id = id_input.value;
         const name = name_input.value;
         const role = role_input.value;
@@ -354,9 +352,6 @@ export function init() {
         alert(data["message"])
 
     });
-
-
-    
 }
 
 

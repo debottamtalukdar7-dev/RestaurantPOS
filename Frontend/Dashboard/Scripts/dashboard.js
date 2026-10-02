@@ -74,7 +74,6 @@ async function loadPage(page,index) {
     //         }
     //     }
         
-        console.log(data);
 
     // if(page == "settings.html")
     // {
